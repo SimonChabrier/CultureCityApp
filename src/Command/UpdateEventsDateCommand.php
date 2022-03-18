@@ -53,7 +53,7 @@ class UpdateEventsDateCommand extends Command
                     //get actuel event date
                     $event->getStartDate();
                     // add rendom interval between + 5 to 7 day
-                    $NewEventDate = $actualEventDate->add(new DateInterval('P' . rand(0,6). 'D'));
+                    $NewEventDate = $actualEventDate->add(new DateInterval('P' . rand(0,3). 'D'));
                     // set the new events date on day + 5 to 7
                     $event->setStartDate($NewEventDate);
                     $io->info('Résultat : ' . $event->setStartDate($NewEventDate));
