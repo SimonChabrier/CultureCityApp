@@ -15,7 +15,7 @@
 
 >https://oclock.io/formations/developpeur-web
 
-## Cette application web a été concue puis réaliséé en 4 semaines par un groupe de 4 personnes travaillant ensemble en distanciel.
+## Cette application web a été concue puis réalisée en 4 semaines par un groupe de 4 personnes travaillant ensemble en distanciel.
 
 >Technologies
 
