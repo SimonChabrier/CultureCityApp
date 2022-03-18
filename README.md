@@ -24,7 +24,7 @@
 
 ## 4 Semaines :
 
-1. Préparation du projet (Trello, MCD/MLD, Cahier des charges, Tableau des routes...)
+1. Préparation et documentation du projet (Trello, MCD/MLD, Cahier des charges, Tableau des routes...)
 2. Développement phase 1
 3. Développement phase 2
 4. Optimisation et mise en production.
