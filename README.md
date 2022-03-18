@@ -36,7 +36,7 @@
 #### une expérience positive lors de l'utilisation de l'application.
 
 
-#### **Le visiteur**  est geo-localisé sur la page d'acceuil. L'application lui propose alors automatiquement les événements qui sont proches de chez lui. Il à la possibilité d'utiliser la pleine navigation sur l'application. Filtrer dynamiquement les événements (JS) par date, par catégorie ou par date + catégorie. 
+#### **Le visiteur**  est geo-localisé sur la page d'accueil. L'application lui propose alors automatiquement les événements qui sont proches de chez lui. Il à la possibilité d'utiliser la pleine navigation sur l'application. Filtrer dynamiquement les événements (JS) par date, par catégorie ou par date + catégorie. 
 
 **Le visiteur**  peut aussi filtrer tous les événements comportant un tag. Ex: cliquer sur un événement portant le tag 'jeunesse' lui retournera tous les événements portant ce tag. 
 
