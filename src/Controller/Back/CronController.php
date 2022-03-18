@@ -33,7 +33,7 @@ public function cronJobOnEventDate (EventRepository $eventRepository, EntityMana
         //get actuel event date
         $event->getStartDate();
         // add rendom interval between + 5 to 7 day
-        $NewEventDate = $actualEventDate->add(new DateInterval('P' . rand(2,6). 'D'));
+        $NewEventDate = $actualEventDate->add(new DateInterval('P' . rand(0,6). 'D'));
         // set the new events date on day + 5 to 7
         $event->setStartDate($NewEventDate);
         
