@@ -8,7 +8,7 @@
 >"Developpement Web et Web Mobile" au sein de l'école O'Clock.
 >https://oclock.io/formations/developpeur-web
 
-## Cette application web a été concue puis réaliséé en 4 semaines par un groupe de 4 personnes travaillant ensemble en distentiel.
+## Cette application web a été concue puis réaliséé en 4 semaines par un groupe de 4 personnes travaillant ensemble en distenciel.
 
 >Technologies
 
@@ -20,7 +20,7 @@
 6. Css
 7. Sass
 
-#### L'application permet d'une par à des acteurs culturels après inscription sur l'appli de partager très facilement une programmation événementielle et d'autre part au visiteur de naviguer instinctivement dans les événements proposés près de chez lui.
+#### L'application permet d'une par à des acteurs culturels (après inscription sur l'appli) de partager très facilement une programmation événementielle et d'autre part au visiteur de naviguer instinctivement dans les événements proposés près de chez lui.
 
 ## 4 Semaines :
 
