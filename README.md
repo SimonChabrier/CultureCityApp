@@ -8,7 +8,7 @@
 >"Developpement Web et Web Mobile" au sein de l'école O'Clock.
 >https://oclock.io/formations/developpeur-web
 
-## Cette application web a été concue puis réaliséé en 4 semaines par un gourpe de 4 personnes travaillant ensemble en distentiel.
+## Cette application web a été concue puis réaliséé en 4 semaines par un groupe de 4 personnes travaillant ensemble en distentiel.
 
 >Technologies
 
