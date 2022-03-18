@@ -3,7 +3,7 @@
 ## Voir l'application :
 >https://culturecityapp.simschab.fr/
 
-## Me retrouver sur Likedin :
+## Me retrouver sur Linkedin :
 >https://www.linkedin.com/in/simon-chabrier/
 
 ## Vidéo de présentation de l'application :
