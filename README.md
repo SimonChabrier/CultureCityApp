@@ -52,6 +52,6 @@ L'application lui offre la possibilité de mettre et de retirer des événements
 
 Sur sa page de profil **l'annonceur** a la possibilité de directement éditer toutes les informations de ses propres événements. Changer la date, le prix, l'image d'illustration....
 
-**L'administrateur** a lui un accès au back office de l'application. Il peut administrer l'intégralité des contenus publiés. Créer / Lire / Mettre à jour / Supprimer (CRUD) tout ce qui est présent sur l'pplication. (Catégories, tags, evénements, utilisateurs...)
+**L'administrateur** a lui un accès au back office de l'application. Il peut administrer l'intégralité des contenus publiés. Créer / Lire / Mettre à jour / Supprimer (CRUD) tout ce qui est présent sur l'application. (Catégories, tags, evénements, utilisateurs...). Et plus..
 
 
