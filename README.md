@@ -3,6 +3,12 @@
 ## Voir l'application :
 >https://culturecityapp.simschab.fr/
 
+## Me retrouver sur Likedin :
+>https://www.linkedin.com/in/simon-chabrier/
+
+## Vidéo de présentation de l'application :
+>https://www.youtube.com/watch?v=U5m2nF-VYbk&t=6s
+
 ## Projet de fin de formation:
 
 >"Developpement Web et Web Mobile" au sein de l'école O'Clock.
