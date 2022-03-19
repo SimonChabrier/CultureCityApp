@@ -473,10 +473,21 @@ b {
 }
 
 .progress-bar {
+  transition: 0.7s;
   height: 100%;
   width: 0;
   border-radius: 5px;
-  background-color: rgb(53, 132, 192);
+  background-color: var(--main-color-blue-med);
+  padding: 1.7% 0;
+}
+
+.final-progress-bar {
+  transition: 0.7s;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  background-color: rgb(255 97 5);
+  padding: 1.7% 0;
 }
 
 /*-------------------------------------------------------------------------------------*/

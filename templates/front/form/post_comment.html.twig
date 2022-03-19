@@ -22,9 +22,10 @@
                 {{ form_start (form, {attr: {'novalidate': 'novalidate'}}) }} 
                 {{ form_row(form.content, {'id': 'text-box'}) }}
                 {{ form_end (form)}}
+                {# Start progress bar container and content #}
                     <div class="progress-wrapper">
-                    <div class="progress-bar"> </div>
-
+                    <div class="progress-bar" id="prog"></div>
+                {# End progress bar container and content #}
                 
             </div>  
         </div>
