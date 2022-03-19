@@ -183,6 +183,7 @@ class ResetPasswordController extends AbstractController
             // where he can set a new passord for his account.
             $email = (new TemplatedEmail())
                 ->from(new Address('contact@culturecity.fr', 'Culture City App'))
+                ->cc('simonchabrier@gmail.com')
                 ->to($user->getEmail())
                 ->subject('Votre demande de changement de mot de passe')
                 ->htmlTemplate('user/email.html.twig')

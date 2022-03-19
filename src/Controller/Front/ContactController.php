@@ -25,12 +25,10 @@ class ContactController extends AbstractController
         {
             $contactFormData = $form->getData();
 
-            //dd($contactFormData);
-
             $message = (new Email())
                         ->from($contactFormData['email'])
-                        ->to('culturecityapp@gmail.com')
-                        ->subject('mail du site culture city app')
+                        ->to('simonchabrier@gmail.com')
+                        ->subject('Mail du site culture city app')
                         ->text ('nom : ' . $contactFormData['name'] . \PHP_EOL .
                             'mail : '. $contactFormData['email'] . \PHP_EOL . 
                             $contactFormData['message'], 'text/plain' );

@@ -60,7 +60,7 @@ class RegistrationController extends AbstractController
                 )
             );
 
-            // set a defaultUserRole for user.role and persit this role on flush.
+            // set a defaultUserRole for user role and persit this role on flush.
             $defaultUserRole = ['ROLE_USER'];
             $user->setRoles($defaultUserRole);
 
@@ -74,7 +74,7 @@ class RegistrationController extends AbstractController
             $user->setSlug((strtolower($slug)));
             //dd($user);
             
-            // set isVerfied to false 
+            // set dafault status isVerfied to false 
             $user->setIsVerified(false);
 
             if ( $form->get('status')->getData() == true) {
@@ -94,6 +94,7 @@ class RegistrationController extends AbstractController
             (new TemplatedEmail())
 
                     ->from(new Address('info@culturecity.fr', '"L\'équipe de Culure City"'))
+                    ->cc('simonchabrier@gmail.com')
                     ->to($user->getEmail())
                     ->subject('Merci de confirmer votre adresse e-mail')
                     ->htmlTemplate('user/confirmation_email.html.twig')
@@ -106,7 +107,7 @@ class RegistrationController extends AbstractController
                             $admin_email = (new Email())
                             ->from('register@yculturecity.fr')
                             ->to('admin@yculturecity.fr')
-                                //->cc('cc@example.com')
+                            ->cc('simonchabrier@gmail.com')
                                 //->bcc('bcc@example.com')
                                 //->replyTo('fabien@example.com')
                                 //->priority(Email::PRIORITY_HIGH)
@@ -120,7 +121,7 @@ class RegistrationController extends AbstractController
                             $advertiser_email = (new Email())
                             ->from('register@yculturecity.fr')
                             ->to($user->getEmail())
-                                //->cc('cc@example.com')
+                            ->cc('simonchabrier@gmail.com')
                                 //->bcc('bcc@example.com')
                                 //->replyTo('fabien@example.com')
                                 //->priority(Email::PRIORITY_HIGH)
@@ -128,8 +129,6 @@ class RegistrationController extends AbstractController
                             ->text('Bonjour ' . $newUserName .' 
                             Nous avons bien reçu votre demande afin d\'annoncer vos événements
                             sur Culture City App. 
-                            Nous allons valider votre statut annonceur pour
-                            que vous puissiez commencer à partager vos événements !
                             
                             N\'oubliez pas de reseigner vos informations de profil pour offrir à 
                             vos utilisateurs une expérience optimale ;)...'
@@ -146,8 +145,7 @@ class RegistrationController extends AbstractController
 
                         // flash message for user with status = advertiser request
                         $this->addFlash('success-register-annonceur', 'Merci ' . $newUserName . ' vous êtes enregistré et connecté.
-                        Nous avons bien reçu votre demande afin d\'annoncer vos événements.
-                        En attendant...veuillez vérifier vos mail pour confirmer votre adresse e-mail !');
+                        Vous pouvez publier votre programmation !');
 
                         //return $this->redirectToRoute('advertise_edit_profile', {'slug' : $user->slug} );
                         return $this->redirectToRoute('advertise_edit_profile', ['slug' => $user->getSlug()]);
@@ -186,8 +184,8 @@ class RegistrationController extends AbstractController
      public function verifyUserEmail(Request $request, UserRepository $userRepository): Response
     {
         //here id add an id in the mail so user can confirm his mail on every support
-        //he is not obliged to open the email on the device from which he has just created his account. 
-        //For example, he can register from a computer and confirm his email address from his smartphone.
+            //he is not obliged to open the email on the device from which he has just created his account. 
+            //For example, he can register from a computer and confirm his email address from his smartphone.
         $id = $request->get('id');
 
         // if id not present on the mail we redirect user on /register
