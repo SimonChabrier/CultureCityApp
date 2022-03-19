@@ -26,6 +26,9 @@
 5. Twig
 6. Css
 7. Sass
+8. Git
+9. Sql
+10. Api
 
 #### L'application permet d'une par à des acteurs culturels (après inscription sur l'appli) de partager très facilement une programmation événementielle et d'autre part au visiteur de naviguer instinctivement dans les événements proposés près de chez lui.
 
@@ -47,7 +50,7 @@
 
 **Le visiteur**  peut aussi filtrer tous les événements comportant un tag. Ex: cliquer sur un événement portant le tag 'jeunesse' lui retournera tous les événements portant ce tag. 
 
-**Le visiteur** peut aussi naviguer dans les événements par catégorie via un menu plus traditionnel. Il aussi pourra afficher la page de profil d'un organisateur et consulter tous les évenements proposés par cet organisateur.
+**Le visiteur** peut aussi naviguer dans les événements par catégorie via un menu plus traditionnel. Il pourra aussi afficher la page de profil d'un organisateur et consulter tous les évenements proposés par cet organisateur.
 
 **L'utilisateur** après inscription est automatiqument connecté à l'application et reçoit en parrallèle un e-mail l'invitant à confirmer son adresse mail. Il a la possibilité d'éditer sa page de profil en y ajoutant une bannière et sa photo de profil, renseigner ses réseaux sociaux. Il pourra aussi mettre à jour ces informations et si il le souhaite, changer ses images, ajouter ou retirer ses réseaux sociaux...
 
@@ -62,3 +65,4 @@ Sur sa page de profil **l'annonceur** a la possibilité de directement éditer t
 **L'administrateur** a lui un accès au back office de l'application. Il peut administrer l'intégralité des contenus publiés. Créer / Lire / Mettre à jour / Supprimer (CRUD) tout ce qui est présent sur l'application. (Catégories, tags, evénements, utilisateurs...). Et plus..
 
 
+#### Chaque semaine, une tâche cron remet à jour les dates des événements à la semaine suivante pour que vous puissiez toujours découvrir l'application dans sa version de démonstration.
