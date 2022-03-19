@@ -18,15 +18,13 @@
                     <h1 class = "mb-4">{{ app.user.name }} commentez l'événement : {{ event.name }}</h1>
                 {% endif %}
 
-                <div class="row">
-                    {{ form_start (form, {attr: {'novalidate': 'novalidate'}}) }}
-                    {{ form_end (form)}}
-                </div> 
-                {# {% if vich_uploader_asset (event, 'pictureFile') %}
-                        <img class="img-fluid w-100 border-radius" src="{{ vich_uploader_asset (event, 'pictureFile') | imagine_filter ('event_picture_300') }}" alt="{{ event.name }}" />
-                    {% else %}
-                        <img class="img-fluid w-100 border-radius" src="{{ vich_uploader_asset (event, 'pictureFile') ?: '/upload/default_picture/default_event.jpg' | imagine_filter ('event_picture_300') }}" alt="{{ event.name }}" />
-                {% endif %} #}
+
+                {{ form_start (form, {attr: {'novalidate': 'novalidate'}}) }} 
+                {{ form_row(form.content, {'id': 'text-box'}) }}
+                {{ form_end (form)}}
+                    <div class="progress-wrapper">
+                    <div class="progress-bar"> </div>
+
                 
             </div>  
         </div>

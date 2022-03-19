@@ -41,7 +41,8 @@ class PostController extends AbstractController
         // get postType and bind new Post object on curent event
         $form = $this->createForm(PostType::class, $post);
         $form->handleRequest($request);
-                   
+
+             
         if ($form->isSubmitted() && $form->isValid()) {
 
             $postCreatedAt = new DateTimeImmutable('now');
@@ -62,6 +63,8 @@ class PostController extends AbstractController
             //return user on commented event
             return $this->redirectToRoute('show_event', ['slug'=> $event->getSlug()], Response::HTTP_SEE_OTHER);
         }
+
+        
        
         return $this->renderForm('front/form/post_comment.html.twig', compact('form' , 'event'));
          

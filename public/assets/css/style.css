@@ -454,6 +454,32 @@ b {
 }
 
 /*-------------------------------------------------------------------------------------*/
+/* PROGRESS BAR ON EVENT COMMENT 												   
+/*-------------------------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+#text-box {
+  width: 100%;
+}
+
+.progress-wrapper {
+  height: 15px;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  background-color: rgb(53, 132, 192);
+}
+
+/*-------------------------------------------------------------------------------------*/
 /* RESPONSIVE														   
 /*-------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -496,5 +522,8 @@ b {
     bottom: none;
     width: 100%;
   }
+
+
+
 }
 /*# sourceMappingURL=style.css.map */
