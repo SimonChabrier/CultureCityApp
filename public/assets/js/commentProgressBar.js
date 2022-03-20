@@ -2,8 +2,6 @@
 
 //set max text lenght in caracters
 const postLength = 280; 
-//const postLength = 10; 
-//var value = $('#prog').val();
 
 // Listen changes on keyup & paste events.
 $('#text-box').on('change keyup paste', function() {
@@ -13,10 +11,6 @@ $('#text-box').on('change keyup paste', function() {
 
   // Calculate the percentage
   let percent = (textLength / postLength) * 100;
-
-    if (percent >= null) {
-        $('.progress-bar').css("background", "#31AD12");
-    }
 
     if (percent > 30) {
         $('.progress-bar').css("background", "#ffc107");
@@ -29,7 +23,6 @@ $('#text-box').on('change keyup paste', function() {
     if (percent > 90) {
         $('.progress-bar').css("background", "#DD2A08");
     }
-
 
     if (percent < 100) {
         //set message visibility hidden < 100%
