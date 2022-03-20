@@ -23,7 +23,7 @@ class Post
     /**
      * @Assert\Length(
      *      min = 10,
-     *      max = 250,
+     *      max = 500,
      *      minMessage = "Un commentaire doit contenir au minimum {{ limit }} charactères",
      *      maxMessage = "Un commentaire peut contenir au maximum {{ limit }} charactères"
      * )

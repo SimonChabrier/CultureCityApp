@@ -1,7 +1,7 @@
 //first think to call progressBar.js and Jquery in header
 
 //set max text lenght in caracters
-const postLength = 250; 
+const postLength = 500; 
 //var value = $('#prog').val();
 
 // Listen changes on keyup & paste events.
@@ -38,7 +38,8 @@ $('#text-box').on('change keyup paste', function() {
     $('.progress-bar').width(percent + '%');
 
         // UncommentAnimate to the width of the bar based on the percentage.
-        /* $('.progress-bar').animate({
+        /*
+        $('.progress-bar').animate({
             width: percent + '%'
         }, 100) */
 });
