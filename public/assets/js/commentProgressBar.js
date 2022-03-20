@@ -1,8 +1,8 @@
 //first think to call progressBar.js and Jquery in header
 
 //set max text lenght in caracters
-//const postLength = 280; 
-const postLength = 10; 
+const postLength = 280; 
+//const postLength = 10; 
 //var value = $('#prog').val();
 
 // Listen changes on keyup & paste events.
@@ -15,15 +15,15 @@ $('#text-box').on('change keyup paste', function() {
   let percent = (textLength / postLength) * 100;
 
     if (percent >= null) {
-    $('.progress-bar').css("background", "#31AD12");
+        $('.progress-bar').css("background", "#31AD12");
     }
 
     if (percent > 30) {
-        $('.progress-bar').css("background", "#A8AD12");
+        $('.progress-bar').css("background", "#ffc107");
     }
 
     if (percent > 60) {
-        $('.progress-bar').css("background", "#DD760C");
+        $('.progress-bar').css("background", "#ff5c00");
     }
 
     if (percent > 90) {
@@ -32,22 +32,15 @@ $('#text-box').on('change keyup paste', function() {
 
 
     if (percent < 100) {
-
-        //set message visibility class Off < 100%
-        $('.message').addClass('messageOff').removeClass('messageOn');
-        $('.progress-bar').addClass('progress-bar').removeClass('final-progress-bar');
-    
+        //set message visibility hidden < 100%
+        $('.message').css("visibility", "hidden");;
     }
   
     if (percent >= 100) {
+        
         // Limit the percentage to 100.
         percent = 100;
-
-         //set message visibility class On > 100%
-        $('.message').addClass('messageOn').removeClass('messageOff');
-        //set progress bar end css class
-        $('.progress-bar').addClass('final-progress-bar');
-
+        $('.message').css("visibility", "visible");
     }
 
  

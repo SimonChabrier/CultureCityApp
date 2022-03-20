@@ -463,7 +463,7 @@ b {
 }
 
 .progress-wrapper {
-  height: 15px;
+  height: 7%;
   width: 100%;
   text-align: left;
   margin: 0 auto;
@@ -475,24 +475,11 @@ b {
   width: 0;
   border-radius: 5px;
   padding: 1.3% 0;
+  background: rgb(49, 173, 18);
 }
 
-.final-progress-bar {
-  transition: 1s;
-  height: 100%;
-  width: 0;
-  border-radius: 5px;
-  /* background-color: rgb(255 97 5); */
-  padding: 1.3% 0;
-}
 
-.messageOff {
-  visibility: hidden;
-}
 
-.messageOn {
-  visibility: visible;
-}
 
 /*-------------------------------------------------------------------------------------*/
 /* RESPONSIVE														   
