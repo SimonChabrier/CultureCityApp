@@ -22,9 +22,12 @@
                 {{ form_start (form, {attr: {'novalidate': 'novalidate'}}) }} 
                 {{ form_row(form.content, {'id': 'text-box'}) }}
                 {{ form_end (form)}}
+                
                 {# Start progress bar container and content #}
                     <div class="progress-wrapper">
-                    <div class="progress-bar" id="prog"></div>
+                    <div class="progress-bar" id="bar">
+                    <div class="message">Oups ! Un commmentaire est limité à 250 caractères.</div>
+                    </div>
                 {# End progress bar container and content #}
                 
             </div>  

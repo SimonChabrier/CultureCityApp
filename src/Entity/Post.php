@@ -21,6 +21,12 @@ class Post
     private $id;
 
     /**
+     * @Assert\Length(
+     *      min = 10,
+     *      max = 250,
+     *      minMessage = "Un commentaire doit contenir au minimum {{ limit }} charactères",
+     *      maxMessage = "Un commentaire peut contenir au maximum {{ limit }} charactères"
+     * )
      * @ORM\Column(type="text", name="content")
      */
     private $content;
