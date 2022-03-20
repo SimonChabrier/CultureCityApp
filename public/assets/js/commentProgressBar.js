@@ -1,7 +1,8 @@
 //first think to call progressBar.js and Jquery in header
 
 //set max text lenght in caracters
-const postLength = 500; 
+//const postLength = 280; 
+const postLength = 10; 
 //var value = $('#prog').val();
 
 // Listen changes on keyup & paste events.
@@ -13,9 +14,25 @@ $('#text-box').on('change keyup paste', function() {
   // Calculate the percentage
   let percent = (textLength / postLength) * 100;
 
+    if (percent >= null) {
+    $('.progress-bar').css("background", "#31AD12");
+    }
+
+    if (percent > 30) {
+        $('.progress-bar').css("background", "#A8AD12");
+    }
+
+    if (percent > 60) {
+        $('.progress-bar').css("background", "#DD760C");
+    }
+
+    if (percent > 90) {
+        $('.progress-bar').css("background", "#DD2A08");
+    }
+
+
     if (percent < 100) {
 
-        
         //set message visibility class Off < 100%
         $('.message').addClass('messageOff').removeClass('messageOn');
         $('.progress-bar').addClass('progress-bar').removeClass('final-progress-bar');
