@@ -26,3 +26,6 @@ yarn-error.log
 ###> javascript configuration file ###
 /public/assets/js/config.js
 ###< javascript configuration file ###
+
+###> Config OSX qui crée ses fichiers ###
+**/.DS_Store
